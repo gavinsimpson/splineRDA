@@ -1,15 +1,14 @@
 Package: SplineRDA
-Title: What the Package Does (One Line, Title Case)
+Title: Fits a spline gradient to multivariate species community data using CCA or RDA.
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Russell",
+           family = "Millar",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "r.millar@auckland.ac.nz",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Description: Extracts a nonlinear gradient from a spline basis fitted using CCA or RDA. 
+License: `use_mit_license()`
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
