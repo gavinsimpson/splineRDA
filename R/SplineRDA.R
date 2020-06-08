@@ -24,6 +24,13 @@
 #'CAP.fit=capscale((Counts>0)~B+Locn,dist="bray") #Fit RDA on PCOs
 #'Gradients=splineGradient(CAP.fit,Bdf=5,predB=list(Bpred),type="l")
 #'
+#'#Draw triplot
+#'env=Gradients$Env.scores
+#'ordiplot(CAP.fit,display = c("sp", "wa", "cn")[1:2],scaling=3,
+#'             cex=0.6,xlim=c(-1.5,1.5),ylim=c(-1.5,1.5))
+#'arrows(0,0,env[1,],env[2,],length=0.05,col="blue",lwd=1.5)
+#'text(env[1,],env[2,],colnames(env),cex=0.8,adj=c(0,0.5))
+#'
 #splineGradient function
 
 splineGradient=function(object,Bdf,Gnames=NULL,predB=NULL,plot=T,...)
